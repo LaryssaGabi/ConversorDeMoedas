@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <title>Conversor De Moedas</title>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="container">
+            <h1 class="titulo">Conversor de Moedas</h1>
+
+            <label class="conversao-label">
+                Converter <b>de</b>
+                <select class="moeda-de">
+                    <option value="BRL">R$ Real Brasileiro</option>
+                    <option value="USD">US$ Dólar Americano</option>
+                    <option value="EUR">€ Euro</option>
+                    <option value="GBP">£ Libra Esterlina</option>
+                </select>
+            </label>
+            
+            <label class="conversao-label">
+                Converter <b>para</b>
+                <select class="moeda-para">
+                    <option value="BRL">R$ Real Brasileiro</option>
+                    <option value="USD">US$ Dólar Americano</option>
+                    <option value="EUR">€ Euro</option>
+                    <option value="GBP">£ Libra Esterlina</option>
+                </select>
+            </label>
+
+            <label class="valor-label">
+                <b>Valor</b>
+                <input class="valor-input" type="number" id="valor" placeholder="Digite o valor a converter">
+            </label>
+
+            <button class="converter-button" onclick="converter()" onkeypress="converter()">Converter!</button>
+
+            <section class="resultados">
+                <div class=" resultado-item-de">
+                    <img class="logo" src="./src/img/brl.png" alt="real-logo">
+                    <p class="moeda-nome">Real Brasileiro</p>
+                    <p class="moeda-valor">R$ 0,00</p>
+                </div>
+
+                <img src="./src/img/seta.png" alt="Seta de conversão">
+
+                <div class="resultado-item-para">
+                    <img class="logo" src="./src/img/usd.png" alt="dolar-logo">
+                    <p class="moeda-nome">Dólar Americano</p>
+                    <p class="moeda-valor">US$ 0,00</p>
+                </div>
+            </section>
+        </div>
+    </div>
+<script src="./src/js/funcoes.js"></script>
+
+</body>
+
+</html>
